@@ -1,5 +1,7 @@
 # Text Essence
 
+[![Build Status](https://travis-ci.org/soroushj/node-text-essence.svg?branch=master)](https://travis-ci.org/soroushj/node-text-essence)
+
 Remove non-alphanumeric characters from any Unicode string. Optionally, also remove [diacritical marks](https://en.wikipedia.org/wiki/Diacritic).
 
 ## Essence
