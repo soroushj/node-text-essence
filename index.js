@@ -13,7 +13,7 @@ const availableOptions = {
     defaultValue: 'sha256',
     validate: val => {
       let hash = val.toString().toLowerCase();
-      if (crypto.getHashes().indexOf(hash) === -1) {
+      if (!crypto.getHashes().includes(hash)) {
         throw new Error('Hash algorithm not supported: ' + JSON.stringify(val));
       }
       return hash;
