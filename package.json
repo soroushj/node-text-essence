@@ -1,7 +1,7 @@
 {
   "name": "text-essence",
   "version": "1.0.1",
-  "description": "Remove non-alphanumeric characters from any Unicode string. Optionally, also remove diacritical marks.",
+  "description": "Extract the essence of any Unicode string.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
