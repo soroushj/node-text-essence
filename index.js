@@ -12,7 +12,7 @@ const availableOptions = {
   hashAlgorithm: {
     defaultValue: 'sha256',
     validate: val => {
-      let hash = val.toString().toLowerCase();
+      let hash = ('' + val).toLowerCase();
       if (!crypto.getHashes().includes(hash)) {
         throw new Error('Hash algorithm not supported: ' + JSON.stringify(val));
       }
@@ -50,7 +50,7 @@ class TextEssence {
     if (str === undefined || str === null) {
       return '';
     }
-    let strEssence = xregexp.replace(str.toString(), nonAlphaNum, '');
+    let strEssence = xregexp.replace(('' + str), nonAlphaNum, '');
     if (this._options.removeDiacriticalMarks) {
       strEssence = diacritics.remove(strEssence);
     }
