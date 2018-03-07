@@ -14,7 +14,7 @@ const availableOptions = {
     validate: val => {
       let hash = ('' + val).toLowerCase();
       if (!crypto.getHashes().includes(hash)) {
-        throw new Error('Hash algorithm not supported: ' + JSON.stringify(val));
+        throw new Error('Hash algorithm not supported: ' + val);
       }
       return hash;
     }
@@ -33,7 +33,7 @@ class TextEssence {
       options = {};
     }
     if (typeof options !== 'object') {
-      throw new Error('Invalid options - expected an object, got: ' + JSON.stringify(options));
+      throw new Error('Invalid options - expected an object, got: ' + options);
     }
     this._options = {};
     Object.keys(availableOptions).forEach(key => {
