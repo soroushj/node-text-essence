@@ -1,6 +1,6 @@
 {
   "name": "text-essence",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Extract the essence of any Unicode string.",
   "main": "index.js",
   "scripts": {
