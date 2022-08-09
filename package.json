@@ -1,6 +1,6 @@
 {
   "name": "text-essence",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Extract the essence of any Unicode string.",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   "devDependencies": {
     "chai": "^4.3.4",
     "codecov": "^3.8.2",
-    "mocha": "^8.4.0",
+    "mocha": "^10.0.0",
     "nyc": "^14.1.1"
   }
 }
