@@ -8,10 +8,6 @@ Remove non-alphanumeric characters from any Unicode string. Optionally, also rem
 
 ## Essence
 
-Merriam-Webster [defines](https://www.merriam-webster.com/dictionary/essence) *essence* as:
-
-> The properties or attributes by means of which something can be placed in its proper class or identified as being what it is.
-
 `TextEssence.essence` gives you the essence of a string, i.e., only the alphanumerical characters, converted to lower case:
 
 ```javascript
@@ -30,10 +26,6 @@ let city = aggressiveTextEssence.essence('Saint-Étienne');
 ```
 
 ## Identical
-
-Merriam-Webster [defines](https://www.merriam-webster.com/dictionary/identical) *identical* as:
-
-> Having such close resemblance as to be essentially the same.
 
 `TextEssence.identical` lets you check whether two strings are essentially the same:
 
